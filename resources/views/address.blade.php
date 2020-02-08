@@ -78,8 +78,8 @@
              
               <li class="col-sm-2"> <i class="fa fa-phone"></i>
                 <h4 class="font-alegreya">call us</h4>
-                <p>+91 123 456 78</p>
-                <p> +91 123 456 89</p>
+                <p>(703)237-0595</p>
+             
               </li>
             </ul>
           </div>

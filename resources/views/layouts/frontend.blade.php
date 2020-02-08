@@ -7,34 +7,34 @@
 <!-- Document Title -->
 <title>The Purrfect Grrooming  - @yield('title')</title>
 
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <!-- FontsOnline -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,800,900,300,100' rel='stylesheet' type='text/css'>
 
-
 <!-- StyleSheets -->
 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}"> -->
+<link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/main.css')}}">
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
 <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="{{asset('rs-plugin/css/settings.css')}}" media="screen" />
 
 <!-- JavaScripts -->
 <script src="{{asset('js/vendors/modernizr.js')}}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -113,9 +113,9 @@
           <div class="col-md-4"> <img class="margin-bottom-30" src="images/logo-footer.png" alt="" >
             <p>We are here for you</p>
             <ul class="personal-info">
-              <li><i class="fa fa-map-marker"></i> The Purrfect Grrooming Company,grrooming street</li>
+              <li><i class="fa fa-map-marker"></i> The Purrfect Grrooming Company,lee hwy</li>
               <li><i class="fa fa-envelope"></i> SupportPurrfectGrrooming.com</li>
-              <li><i class="fa fa-phone"></i> (004)+ 124 45 78 678 </li>
+              <li><i class="fa fa-phone"></i> (703) 237-0595 </li>
             </ul>
           </div>
 
@@ -158,18 +158,18 @@
 <!-- End Page Wrapper -->
 
 <!-- JavaScripts --> ')}}
-<script src="{{asset('js/vendors/jquery/jquery.min.js')}}"></script>
-<script src="{{asset('js/vendors/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/vendors/own-menu.js')}}"></script>
-<script src="{{asset('js/vendors/flexslider/jquery.flexslider-min.js')}}"></script>
-<script src="{{asset('js/vendors/jquery.isotope.min.js')}}"></script>
-<script src="{{asset('js/vendors/owl.carousel.min.js')}}"></script>
+<script src="{{asset('js/vendors/jquery/jquery.min.js')}}"></script> 
+<script src="{{asset('js/vendors/bootstrap.min.js')}}"></script> 
+<script src="{{asset('js/vendors/own-menu.js')}}"></script> 
+<script src="{{asset('js/vendors/flexslider/jquery.flexslider-min.js')}}"></script> 
+<script src="{{asset('js/vendors/jquery.isotope.min.js')}}"></script> 
+<script src="{{asset('js/vendors/owl.carousel.min.js')}}"></script> 
 <script src="{{asset('js/vendors/jquery.sticky.js')}}"></script>
 
 @if($controller=="HomeController" and $action=="index")
-<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-<script type="text/javascript" src="{{asset('rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script type="text/javascript" src="{{asset('rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script> 
+<script type="text/javascript" src="{{asset('rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script> 
 @endif
 <script src="{{asset('js/main.js')}}"></script>
 </body>
