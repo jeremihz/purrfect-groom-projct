@@ -51,7 +51,8 @@
             <li><a href="{{url('home')}}">HOME</a></li>
             <li><a href="{{url ('/services')}}"> SERVICES </a></li>
             <li><a href="{{url ('/hours')}}"> HOURS OF OPERATION </a></li>
-            <li><a href="{{url ('/address')}}"> ADDRESS</a></li>
+            <li><a href="{{url ('/book')}}"> BOOK </a></li>
+            <li><a href="{{url ('/address')}}"> MATTED FUR RELEASE FORM</a></li>
 
  <!-- <ul id="ownmenu" class="ownmenu"> -->
             @if (Route::has('login'))
@@ -99,54 +100,55 @@
   @yield('content')
 
   <!-- Footer -->
-  <footer>
+   <footer>
     <div class="container">
-
+    
     </div>
-
+    
     <!-- Footer Info -->
     <div class="footer-info">
       <div class="container">
-        <div class="row">
-
+        <div class="row"> 
+          
           <!-- About -->
-          <div class="col-md-4"> <img class="margin-bottom-30" src="images/logo-footer.png" alt="" >
-            <p>We are here for you</p>
+       <div class="col-md-4">
+      <h6>We are here for you</h6>
             <ul class="personal-info">
-              <li><i class="fa fa-map-marker"></i> The Purrfect Grrooming Company,lee hwy</li>
-              <li><i class="fa fa-envelope"></i> SupportPurrfectGrrooming.com</li>
-              <li><i class="fa fa-phone"></i> (703) 237-0595 </li>
+        <ul class="links1">
+          <li><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/4Q9xR2ifX6Fm9tTTA"  > 7183 Lee Hwy, Falls Church, VA 22046</a></li>
+        </ul>
             </ul>
           </div>
-
+          
           <!-- Service provided -->
-          <div class="col-md-4">
-            <h6>Service provided</h6>
+         <div class="col-md-4">
+            <h6>Site map</h6>
             <ul class="links">
-              <li><a href="{{url('/services')}}">Services</a></li>
-              <li><a href="{{url('/hours')}}">Hour of operation</a></li>
-              <li><a href="{{url('/address')}}">Address</a></li>
-
-
+              <li><a href="services.html">Services</a></li>
+              <li><a href="hours.html">Hours of Operation</a></li>
+              <li><a href="form.html">Form</a></li>
+             
+              
             </ul>
           </div>
-
+          
           <!-- Quote -->
+           <!-- Quote -->
           <div class="col-md-4">
             <h6>Contact us</h6>
-            <div class="quote">
+            <div class="personal-info">
               <form>
-                <input class="form-control" type="text" placeholder="Name">
-                <input class="form-control" type="text" placeholder="Phone No">
-                <textarea class="form-control" placeholder="Messages"></textarea>
-                <button type="submit" class="btn btn-orange">SEND NOW</button>
+        <ul class="links1">
+          <li class="links1"><i class="fa fa-envelope"><a href="mailto:purrfectgrrooming@gmail.com"></i>purrfectgrrooming@gmail.com</a></li>
+          <li><i class="fa fa-phone"></i> 703-237-0595 </li>
+        </ul>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    
     <!-- Rights -->
     <div class="rights">
       <div class="container">

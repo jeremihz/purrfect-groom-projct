@@ -3,61 +3,17 @@
 
 @section('content')
   
-  <!-- Content -->
+<!-- Content -->
   <div id="content"> 
     
-    <!-- Contact  -->
-    <section class="contact-us light-gray-bg">
-      <div class="container-fluid">
-        <div class="row">
-        
-         <!-- MAP -->
-          <div class="col-md-4">
-            <div id="map"></div>
-          </div>
-          
-           <!-- Contact From -->
-          <div class="col-md-8">
-            <h3 class="font-alegreya margin-top-50">Get In Touch With Us</h3>
-            <div class="contact-form"> 
-            
-              <!-- FORM -->
-              <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
-                <ul class="row">
-                  <li class="col-sm-6">
-                    <label>*NAME
-                      <input type="text" class="form-control" name="name" id="name" placeholder="">
-                    </label>
-                  </li>
-                  <li class="col-sm-6">
-                    <label>*EMAIL
-                      <input type="text" class="form-control" name="email" id="email" placeholder="">
-                    </label>
-                  </li>
-                  <li class="col-sm-6">
-                    <label>PHONE
-                      <input type="text" class="form-control" name="company" id="company" placeholder="">
-                    </label>
-                  </li>
-                  <li class="col-sm-6">
-                    <label>SUBJECT
-                      <input type="text" class="form-control" name="website" id="website" placeholder="">
-                    </label>
-                  </li>
-                  <li class="col-sm-12">
-                    <label>*MESSAGE
-                      <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
-                    </label>
-                  </li>
-                  <li class="col-sm-12 no-margin">
-                    <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">SEND NOW</button>
-                  </li>
-                </ul>
-              </form>
-            </div>
-          </div>
+
+     <!-- INTRO -->
+    <section class="text-center" style="background:url(images/service.jpg no-repeat;">
+      <div class="container">
+        <div class="text-center margin-bottom-50">
+          <p class="text-black intro-style font-14px"><b>Matted Fur Release Form. Download the Form (PDF) below. It can be downloaded by clicking on the orange button below.</b> </p>
         </div>
-      </div>
+        <a href="form/PurrfectGroomingMattedFurReseaseForm.pdf" class="btn btn-orange">Download form</a> </div>
     </section>
     
     <!-- Contact Info -->
@@ -65,7 +21,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
-            <h3 class="font-alegreya margin-top-30">Contact Us</h3>
+            <h3 class="font-alegreya margin-top-30">LET US TAKE CARE OF YOUR PETS</h3>
           </div>
 
           <div class="col-md-8">
@@ -77,8 +33,8 @@
               </li>
              
               <li class="col-sm-2"> <i class="fa fa-phone"></i>
-                <h4 class="font-alegreya">call us</h4>
-                <p>(703)237-0595</p>
+                <h4 class="font-alegreya">Call Us</h4>
+                <p>703-237-0595</p>
              
               </li>
             </ul>
@@ -87,5 +43,6 @@
       </div>
     </section>
   </div>
+  <!-- End Content --> 
   <!-- End Content --> 
   @endsection

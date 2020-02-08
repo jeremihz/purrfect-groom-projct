@@ -19,6 +19,7 @@ Route::get('/', 'HomeController@index');
 
 Route::group(['middleware' => 'auth'], function(){
   Route::get('/hours', 'HomeController@hours');
+  Route::get('/book', 'HomeController@book');
   Route::get('/services', 'HomeController@services');
   Route::get('/address', 'HomeController@address');
   Route::post('/send', 'SendEmailController@send');
