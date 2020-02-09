@@ -52,6 +52,7 @@
             <li><a href="{{url ('/services')}}"> SERVICES </a></li>
             <li><a href="{{url ('/hours')}}"> HOURS OF OPERATION </a></li>
             <li><a href="{{url ('/address')}}"> ADDRESS</a></li>
+              <li><a href="{{url ('/appointment')}}"> APPOINTMENT</a></li>
 
  <!-- <ul id="ownmenu" class="ownmenu"> -->
             @if (Route::has('login'))

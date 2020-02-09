@@ -22,6 +22,7 @@ Route::group(['middleware' => 'auth'], function(){
   Route::get('/services', 'HomeController@services');
   Route::get('/address', 'HomeController@address');
   Route::post('/send', 'SendEmailController@send');
+  Route::get('/appointment', 'HomeController@appointment');
 //  Route::post('send', 'SendEmailController@send');
 });
 

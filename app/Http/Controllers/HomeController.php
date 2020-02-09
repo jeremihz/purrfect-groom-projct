@@ -32,4 +32,9 @@ class HomeController extends Controller
     {
         return view('hours');
     }
+
+    public function appointment()
+    {
+        return view('appointment');
+    }
 }
