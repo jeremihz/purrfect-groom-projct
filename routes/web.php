@@ -26,6 +26,7 @@ Route::group(['middleware' => 'auth'], function(){
   Route::get('/appointment', 'HomeController@appointment');
 //  Route::post('send', 'SendEmailController@send');
     Route::resource('appointments', 'AppointmentController');
+    Route::get('/csv', 'AppointmentController@exportCSV');
 });
 
 Auth::routes();

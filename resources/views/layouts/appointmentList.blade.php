@@ -15,15 +15,17 @@
                         @auth
                             <div class="container">
                                 <h1 style="color:orange;">Appointments List</h1><br>
+                                <button type="button" class="btn btn-primary" onclick="window.location='{{ url("/csv") }}'">Get CSV</button>
+                                <br><br>
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                     <tr>
-                                        <td>First Name</td>
-                                        <td>Last Name</td>
-                                        <td>Phone</td>
-                                        <td>Pet's Name</td>
-                                        <td>Appointment Date</td>
-                                        <td>Appointment Time</td>
+                                        <td><b>First Name</b></td>
+                                        <td><b>Last Name</b></td>
+                                        <td><b>Phone</b></td>
+                                        <td><b>Pet's Name</b></td>
+                                        <td><b>Appointment Date</b></td>
+                                        <td><b>Appointment Time</b></td>
                                     </tr>
                                     </thead>
                                     <tbody>

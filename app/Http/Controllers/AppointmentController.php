@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Appointment;
+use App\User;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -23,9 +24,13 @@ class AppointmentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function exportCSV()
     {
-        //
+        $csvExporter = new \Laracsv\Export();
+        $csvExporter->build(Appointment::latest()->get(), ['firstName' => 'First Name', 'lastName' => 'Last Name',
+            'phone' => 'Phone Number', 'petName' => 'Pet\'s Name', 'appointmentDate' => 'Appointment Date',
+            'appointmentTime' => 'Appointment Time']);
+        $csvExporter->download('appointments.csv');
     }
 
     /**

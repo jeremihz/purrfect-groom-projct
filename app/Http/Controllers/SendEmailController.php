@@ -14,7 +14,7 @@ class SendEmailController extends Controller
         $this->validate($request, [
             'firstName' => 'required|string',
             'lastName' => 'required|string',
-            'phone' => 'required|phone:KE|min:10',
+            'phone' => 'required|phone:KE,US|min:10',
             'petName' => 'required|string',
             'date' => 'required|date',
             'time' => 'required|date_format:H:i'
