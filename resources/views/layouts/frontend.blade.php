@@ -7,34 +7,34 @@
 <!-- Document Title -->
 <title>The Purrfect Grrooming  - @yield('title')</title>
 
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <!-- FontsOnline -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,800,900,300,100' rel='stylesheet' type='text/css'>
 
-
 <!-- StyleSheets -->
 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}"> -->
+<link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/main.css')}}">
 <link rel="stylesheet" href="{{asset('css/style.css')}}">
 <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="{{asset('rs-plugin/css/settings.css')}}" media="screen" />
 
 <!-- JavaScripts -->
 <script src="{{asset('js/vendors/modernizr.js')}}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -51,8 +51,10 @@
             <li><a href="{{url('home')}}">HOME</a></li>
             <li><a href="{{url ('/services')}}"> SERVICES </a></li>
             <li><a href="{{url ('/hours')}}"> HOURS OF OPERATION </a></li>
-            <li><a href="{{url ('/address')}}"> ADDRESS</a></li>
+              <li><a href="{{url ('/address')}}"> ADDRESS</a></li>
               <li><a href="{{url ('/appointment')}}"> APPOINTMENT</a></li>
+{{--              <li><a href="{{url ('/book')}}"> BOOK </a></li>--}}
+              <li><a href="{{url ('/address')}}"> MATTED FUR RELEASE FORM</a></li>
 
  <!-- <ul id="ownmenu" class="ownmenu"> -->
             @if (Route::has('login'))
@@ -92,7 +94,6 @@
                 </nav>
               </div>
             </div>
-               </ul>
             @endif
   </header>
   <!-- End Header -->
@@ -100,7 +101,7 @@
   @yield('content')
 
   <!-- Footer -->
-  <footer>
+   <footer>
     <div class="container">
 
     </div>
@@ -111,36 +112,37 @@
         <div class="row">
 
           <!-- About -->
-          <div class="col-md-4"> <img class="margin-bottom-30" src="images/logo-footer.png" alt="" >
-            <p>We are here for you</p>
+       <div class="col-md-4">
+      <h6>We are here for you</h6>
             <ul class="personal-info">
-              <li><i class="fa fa-map-marker"></i> The Purrfect Grrooming Company,grrooming street</li>
-              <li><i class="fa fa-envelope"></i> SupportPurrfectGrrooming.com</li>
-              <li><i class="fa fa-phone"></i> (004)+ 124 45 78 678 </li>
+        <ul class="links1">
+          <li><i class="fa fa-map-marker"></i><a href="https://goo.gl/maps/4Q9xR2ifX6Fm9tTTA"  > 7183 Lee Hwy, Falls Church, VA 22046</a></li>
+        </ul>
             </ul>
           </div>
 
           <!-- Service provided -->
-          <div class="col-md-4">
-            <h6>Service provided</h6>
+         <div class="col-md-4">
+            <h6>Site map</h6>
             <ul class="links">
-              <li><a href="{{url('/services')}}">Services</a></li>
-              <li><a href="{{url('/hours')}}">Hour of operation</a></li>
-              <li><a href="{{url('/address')}}">Address</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="hours.html">Hours of Operation</a></li>
+              <li><a href="form.html">Form</a></li>
 
 
             </ul>
           </div>
 
           <!-- Quote -->
+           <!-- Quote -->
           <div class="col-md-4">
             <h6>Contact us</h6>
-            <div class="quote">
+            <div class="personal-info">
               <form>
-                <input class="form-control" type="text" placeholder="Name">
-                <input class="form-control" type="text" placeholder="Phone No">
-                <textarea class="form-control" placeholder="Messages"></textarea>
-                <button type="submit" class="btn btn-orange">SEND NOW</button>
+        <ul class="links1">
+          <li class="links1"><i class="fa fa-envelope"></i><a href="mailto:purrfectgrrooming@gmail.com">purrfectgrrooming@gmail.com</a></li>
+          <li><i class="fa fa-phone"></i> 703-237-0595 </li>
+        </ul>
               </form>
             </div>
           </div>
@@ -155,10 +157,9 @@
       </div>
     </div>
   </footer>
-</div>
 <!-- End Page Wrapper -->
 
-<!-- JavaScripts --> ')}}
+<!-- JavaScripts -->
 <script src="{{asset('js/vendors/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('js/vendors/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/vendors/own-menu.js')}}"></script>

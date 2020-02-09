@@ -15,8 +15,12 @@ class CreateAppointmentsTable extends Migration
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('email');
+            $table->string('firstName');
+            $table->string('lastName');
+            $table->string('phone');
+            $table->string('petName');
+            $table->date('appointmentDate');
+            $table->time('appointmentTime');
             $table->timestamps();
         });
     }

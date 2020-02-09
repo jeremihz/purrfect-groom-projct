@@ -22,6 +22,10 @@ class HomeController extends Controller
     {
         return view('services');
     }
+     public function book()
+    {
+        return view('book');
+    }
 
     public function address()
     {
